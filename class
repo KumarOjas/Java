@@ -1,0 +1,17 @@
+class Bhopal
+{
+   public static void main(String [] args)
+{
+    System.out.println("In bhopal");
+}
+}
+class Indore
+{
+ public static void main(String [] args)
+ {
+  System.out.println ("in indore");  
+ }
+}
+//name of the program can be both Bhopal.java as well as Indore.java as both of them have  the  main class
+//If we save the name of the code as Bhopal.java then "In bhopal" is printed 
+////If we save the name of the code as Indore.java then "In indore" is printed 
