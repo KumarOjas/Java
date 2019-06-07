@@ -39,4 +39,23 @@ public static void main(String[] args)
         System.out.println(obj2.myInstanceVar);
         
     }}
+    //Example of local variable
+    public class variableDatatypes{
+//example of local variable
+public String myVar="Instance Variable";
+public void myMethod()
+{
+    String myVar="Inside Method";
+    System.out.println(myVar);
+}
+public static void main(String args[])
+{
+variableDatatypes obj=new variableDatatypes();
+System.out.println("calling Method");
+obj.myMethod();
+System.out.println(obj.myVar);
+}
+}
+    
+    
     
