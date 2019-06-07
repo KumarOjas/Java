@@ -1,0 +1,40 @@
+public class bytedatatype{
+public static void main(String [] args)
+{
+byte num;
+num=123;
+System.out.println(num);
+}}
+public class Shortdatatype{
+public static void main(String[] args){
+short num;
+num=28569;
+System.out.print(num);
+}}
+public class longdatatype {
+public static void main(String[] args){
+long num=-12345678755455L;
+System.out.println(num);
+}}
+public class doubledatatype{
+public static void main (String [] args){
+double num=-4236598.9d;
+System.out.println(num);
+}}
+public class floatdatatype{
+public static void main (String [] args){
+float num=19.98f;
+System.out.println(num);
+}}
+public class booleandatatype{
+public static void main(String[] args) {
+ boolean b=false;
+ System.out.print(b);
+ }
+ }
+ public class chardatatype{
+ public static void main(String[] args){
+ char ch='O';//If you want to use string instead String ch="Ojas";
+ System.out.println(ch);
+ }
+ }
