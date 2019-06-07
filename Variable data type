@@ -1,3 +1,5 @@
+//Example of static variable
+//highest scope (Class+object)
 public class variableDatatypes{
 static int count=0;
 public void increment()
@@ -17,6 +19,7 @@ public static void main(String args[])
     }}
 
 //Example of instance variable
+//2nd highest scope exists as long as the object exists.
 
 public class variableDatatypes{
 //example of instance variable
