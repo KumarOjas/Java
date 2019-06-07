@@ -15,3 +15,25 @@ public static void main(String args[])
 
 
     }}
+
+//Example of instance variable
+
+public class variableDatatypes{
+//example of instance variable
+String myInstanceVar="instance Variable";
+public static void main(String[] args)
+{
+    variableDatatypes obj=new variableDatatypes();
+    variableDatatypes obj1=new variableDatatypes();
+    variableDatatypes obj2=new variableDatatypes();
+    
+    System.out.println(obj.myInstanceVar);
+      System.out.println(obj1.myInstanceVar);
+        System.out.println(obj2.myInstanceVar);
+        obj2.myInstanceVar="Changed Text";
+         System.out.println(obj.myInstanceVar);
+      System.out.println(obj1.myInstanceVar);
+        System.out.println(obj2.myInstanceVar);
+        
+    }}
+    
