@@ -96,6 +96,16 @@ class Test2
             System.out.println(b);
         }
     }
+    public class variable
+ {   
+   public static void main(String[] args)
+   {  
+      float f=10.5f ;
+      int a=(int)f;
+      System.out.println(a);
+      System.out.println(f);
+    }
+}
     
     
     
