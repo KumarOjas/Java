@@ -30,7 +30,7 @@ num2%=num1;
 System.out.println("%=output:"+num2);
 }
 }
-
+//Program 3
 public class Inc_dec_operator
 {public static void main(String [] args){
 int num1=100;
@@ -41,3 +41,86 @@ System.out.println("num1++ is:"+num1);
 System.out.println("num2-- is:"+num2);
 }
 }
+//Program 4
+public class Logicaloperator{
+{
+public static void main(String [] args){
+boolean b1=true;
+boolean b2=false;
+System.out.print("b1 && b2"+(b1&&b2));
+System.out.print("b1 || b2"+(b1||b2));
+System.out.print("!(b1 && b2):"+!(b1&&b2));
+}}
+//Program 5
+public class relationaloperator
+{ public static void main(String args[])
+{ int num1=10;
+ int num2=50;
+ if(num1==num2 )
+ {System.out.println("num1 and num2 are equal");}
+ else
+ {System.out.println("num1 and num2 are not equal");}
+ if(num1!=num2 )
+ {System.out.println("num1 and num2 are not equal");}
+ else
+ {System.out.println("num1 and num2 are equal");}
+ if(num1>num2)
+ {System.out.println("num1 is greater than num2 ");} 
+else
+ {System.out.println("num1 is not greater than num2 ");} 
+ if(num1<num2)
+ {System.out.println("num2 is greater than num1 ");} 
+else
+ {System.out.println("num2 is not greater than num1 ");} 
+ if(num1<=num2)
+{System.out.println("num2 is greater than or equal to  num1 ");} 
+else
+ {System.out.println("num2 is not greater than or equal to num1 ");} 
+ if(num1>=num2)
+{System.out.println("num1 is greater than or equal to  num2 ");} 
+else
+ {System.out.println("num1 is not greater than or equal to num2 ");} 
+ }}
+//Program 6
+public class bitwiseoperator {
+ { public static void main(String args[]){
+ int num1=11;
+ int num2=22;
+ int result=0;
+ result= num1 & num2;
+System.out.println("num1 & num2 "+result); 
+ result= num1|num2;
+ System.out.println("num1|num2 "+result);
+  result= num1^num2;
+ System.out.println("num1^num2"+result);
+
+  result= num1;
+ System.out.println("num1~num2"+result);
+ result=num1<<2;
+ System.out.println("num1<<num2"+result);
+ result=num1>>2;
+ System.out.println("num1>>num2"+result);
+ result=num1>>2;
+ System.out.print("num1>>>num2"+result);}}
+ //program 7
+ public class ternaryoperator
+ { 
+ public static void main(String args[])
+ {
+ int num1,num2;
+ num1=25;
+ num2=(num1==10)?100:200;
+ System.out.println("num2:"+num2);
+ num2=(num1==25)?100:200;
+ System.out.println("num2:"+num2):
+ }}
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
