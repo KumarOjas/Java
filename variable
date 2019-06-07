@@ -1,0 +1,35 @@
+/*public class variable
+ {
+     static int staticVariable=1;//Has highest scope and operates within the whole class and is initialised by its default value
+     int instanceVariable=2;//Has 2nd best scope next to static  variable  operating until the object exists and is initialised by its
+     default value
+     public void methodName(int methodParameter)
+     {
+         int methodLocalVariable=3;//Has scope within the method body and needs to be initialised
+         if(true){
+         int blockVariable=4;
+    }
+}}*/
+//Program to add two variables
+public class variable
+ {   
+   public static void main(String[] args)
+   { 
+       int a=10;
+       int b=10;
+       int c=a+b;
+       System.out.println(c);
+    }}
+     
+ //Program to convert int value to float
+ public class variable
+ {   
+   public static void main(String[] args)
+   { 
+       int a=10;
+       float f=a;
+       System.out.println(a);
+       System.out.println(f);
+    }
+}
+     
