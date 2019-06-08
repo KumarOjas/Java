@@ -1,0 +1,18 @@
+//Example to display date and time
+import java.util.Date;
+public class datetime{
+public static void main(String [] args)
+{
+Date date=new Date();
+System.out.println(date.toString());
+}}
+//Example of date formatting
+import java.util.*;
+import java.text.*;
+public class date formatting{
+public static void main(String[] args){
+ Date dNow=new Date();
+ SimpleDateFormat ft=new SimpleDateFormat("E yyy.mm.dd 'at' hh:mm:ss a zzz");
+ System.out.println("Current Date:"+ft.format(dNow));
+ }
+ }
