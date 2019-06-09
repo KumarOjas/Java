@@ -1,0 +1,25 @@
+public class dog{
+String name;
+String breed;
+int age;
+String color;
+public dog(String name,String breed, int age,String color){
+this.name=name;
+this.breed=breed;
+this.age=age;
+this.color=color;
+} 
+public String getName()
+{ return name; }
+public String getBreed()
+{return breed;
+public int getAge()
+{ return age; }
+public String getcolor()
+{return color;}
+public String toString(){
+return("Hi my name is"+this.getName()+"\n My breed,age and color are"+this.getbreed()+","+this.getAge()+","this.getcolor());
+}
+public static void main(String[] args){
+dog tuffy=new dog("Tuff","papillon",5,"white");
+System.out.println(tuffy.toString());}
