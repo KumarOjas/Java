@@ -1,0 +1,26 @@
+public class constructoroverloading{
+String name;
+int id;
+int age;
+ 
+ constructoroverloading{int i,String n)
+ {
+ id=i;
+ name=n;
+ }
+ constructoroverloading(int i,String n,int a){
+ id=i;
+ name=n;
+ age=a;
+ }
+ void display(){
+ System.out.println(id+""+name+""age);
+ }
+ public static void main(String args[])
+ {
+ constructoroverloading obj1=new constructoroverloading(11,"Ojas");
+ constructoroverloading obj2=new constructoroverloading(12,"Kumar",13);
+ obj1.display();
+ obj2.display();
+ }}
+ 
