@@ -1,0 +1,32 @@
+//Program to illustrate an example of a constructor
+import java.io.*;
+public class constructor{
+public constructor(){
+System..out.println("I am inside of default constructor");
+}
+public static void main(String[] args)
+{constructor cons=new constructor();
+}}
+
+public class  parametrizedConstructors{                      
+ parametrizedConstructors(){
+ System.out.println("Default  Constructor');
+ }
+ parametrizedConstructors(int i,int j){
+ System.out.println("Constructor with two parameters");}
+ 
+  parametrizedConstructors(int i,int j,int k){
+ System.out.println("Constructor with three  parameters");}
+ 
+
+ parametrizedConstructors(int i,String name){
+ System.out.println("Constructor with int and string param");
+ }
+ public static void main(String args[])
+ {
+ parametrizedConstructors obj=new parametrizedConstructors();
+ parametrizedConstructors obj2=new parametrizedConstructors();
+  parametrizedConstructors obj3=new parametrizedConstructors();
+  parametrizedConstructors obj4=new parametrizedConstructors(1,"Java");
+  }}
+ 
