@@ -23,4 +23,47 @@ int age;
  obj1.display();
  obj2.display();
  }}
- 
+//Example 2
+public class constructoroverloading2
+{
+private int rollNum;
+constructoroverloading2()
+{
+rollNum=100;
+}
+constructoroverloading2(int rnum)
+{
+this();
+rollNum=rollNum+ rnum;
+}
+public int getRollNum()
+{
+return rollNum;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
