@@ -1,0 +1,13 @@
+public claas javaClasses{
+private String name;
+public void setName(String n){
+name=n;
+}
+public string getName(){
+return name;
+}
+public static void main(String [] args){
+javaClasses javaClasses1=new javaClasses();
+javaClasses1.setName("Visitor");
+System.out.println("Hello"+javaClasses1.getName());
+}}
