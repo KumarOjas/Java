@@ -25,8 +25,8 @@ public class  parametrizedConstructors{
  public static void main(String args[])
  {
  parametrizedConstructors obj=new parametrizedConstructors();
- parametrizedConstructors obj2=new parametrizedConstructors();
-  parametrizedConstructors obj3=new parametrizedConstructors();
+ parametrizedConstructors obj2=new parametrizedConstructors(12,12);
+  parametrizedConstructors obj3=new parametrizedConstructors(12,13,14);
   parametrizedConstructors obj4=new parametrizedConstructors(1,"Java");
   }}
  
