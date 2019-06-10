@@ -1,0 +1,78 @@
+//Example 1
+package Abstraction;
+abstract class Animal {
+public abstract void sound():
+}
+
+
+package Abstraction;
+public class dog extends Animal{
+public void sound(){
+System.out.println("Woof");
+}
+public static void main(String args[] )
+{
+Animal obj=new dog();
+obj.sound();
+}}
+//Example 2
+abstract class Shape {
+abstract void draw();
+}
+
+
+package Abstraction2;
+public class Rectangle extends Shape
+{
+void draw(){
+System.out.println("Drawing rectangle");
+}}
+ 
+ package Abstraction2;
+public class Rectangle extends Shape
+{
+void draw(){
+System.out.println("Drawing circle");
+}}
+ 
+ /*When you extend an abstract class, you compulsorily have to make the abstract methods in the subclass for the subclass to compile
+ So like abstract class shape has one method void draw
+ And this class has been extended into rectangle
+ If class rectangle does not contain a draw method, rectangle won't compile
+ You can say it is hiding data because the user only gets to see class shape. He won't get to see class rectangle or circle or whatever you make. So he knows a function draw exists, but does not know how it works, since the abstract class has a bodyless method
+ In inheritance, the method draw has to have some body in class shape. Then when we inherit this class, we cannot create a separate method draw for rectangle, square etc
+ I will give an example to tell you why the abstract class is important
+ Suppose you are making a project to draw different animals
+ There is dog, cat deer etc
+ You don't want anyone else to have the code, but want someone to make a GUI which has various options for each animal
+ So you send your project to that partner 
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
