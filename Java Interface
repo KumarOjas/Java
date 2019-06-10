@@ -12,3 +12,23 @@ public static void main(String args[]){
 A obj=new A();
 obj.print();
 }}
+package interface1;
+public interface Bank{
+float rateofInterest();
+}
+package interface1;
+public class ANZ implements Bank{
+public float rateOfInterest(){
+return 9.15f;
+}
+package interface1;
+public class NIB implements Bank{
+public float rateOfInterest(){
+return 9.7f;
+}}
+package interfac1;
+public class Testinterface2{
+public static void main(String[] args){
+Bank b=new ANZ();
+System.out.println("ROI"+b.rateOfInterest());
+}}
