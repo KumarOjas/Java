@@ -40,7 +40,15 @@ public int getRollNum()
 {
 return rollNum;
 }
-
+public void setRollNum(int rollNum){
+this.rollNum=rollNum;
+}
+public static void main(String[] args)
+{
+ constructoroverloading2 obj=new constructoroverloading2(12);
+ System.out.println(obj.getRollNum());
+ }
+}
 
 
 
