@@ -1,0 +1,98 @@
+//Example of inheritance
+package inheritance;
+public class A{
+float salary=40000;
+}}
+package inheritance;
+public class B extends A{
+int bonus=10000;
+public static void main(String [] args){
+B s=new B();
+System.out.println("Salary"+s.salary);
+System.out.println("Salary after bonus"+s.bonus);
+}}
+//Example 2
+package inheritance2;
+public class Teacher {
+String designation="Teacher";
+String collegename="SpreadTechs";
+void does(){
+System.out.println("Teaching");
+}}
+package inheritance2;
+public class CompTeacher extends Teacher{
+String mainSubject="Computer Science";
+public static void main(String [] args){
+CompTeacher obj=new CompTeacher();
+System.out.println(obj.collegename);
+System.out.println(obj.designation);
+System.out.println(obj.mainSubject);
+obj.does();
+}}
+//Example of multi level inheritance
+package MultiLevelInheritance;
+public class Car {
+ public Car()
+ {
+ System.out.println("Class of car");
+ } 
+public void vehicleType(){
+System.out.println("Vehicle Type Car");
+}}
+package MultiLevelInheritance;
+public class BMW extends Car{
+public BMW(){
+System.out.println("Class BMW");
+}
+public void brand(){
+System.out.println("Brand:BMW");
+}
+public void speed(){
+System.out.println("Max:120kmph");
+}}
+package MultiLevelInheritance;
+public class BMW12 extends BMW{
+public BMW12(){
+System.out.println("Bmw 12 model:2018");
+}
+public void speed(){
+System.out.println("Max=100 kmph");
+}
+public static void main(String [] args) {
+BMW12 obj=new BMW12();
+obj.vehicleType();
+obj.brand();
+obj.speed();
+}}
+//Example  of HierarchicalInheritance;
+package HierarchicalInheritance;
+public class Animal{
+void drink(){
+System.out.println("Eating...");
+}}
+package HierarchicalInheritance;
+public class Cat extends Animal
+{
+void Milk()
+{
+System.out.println("meow.....");
+}}
+package HierarchicalInheritance;
+public class dog extends Animal
+{
+void bark()
+{
+System.out.println("barking.....");
+}}
+package HierarchicalInheritance;
+public class Hirerical{
+public static void main(String args[]){
+Cat c=new Cat();
+c.Milk();
+c.drink();}}
+
+
+
+
+
+
