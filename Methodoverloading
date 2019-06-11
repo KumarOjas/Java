@@ -21,8 +21,20 @@ System.out.println("Float ,int:"+x+","+y);
 void display(float  x,int y){
 System.out.println("Float ,int:"+x+","+y);
 }
+package Methodoverloading;
+public class main{
+public static void main(String[] args)
+{
+method obj=new method();
+obj.display();
+obj.display(525);
+obj.display((float)46.23);
+obj.display('z');
+obj.display(45,63);
+obj.display(963,(float)202.69);
+obj.display((float)523.89,20);
+}}
 /*
-next →← prev
 Method Overloading in Java
 Different ways to overload the method
 By changing the no. of arguments
