@@ -1,0 +1,78 @@
+//Example 1
+package Thiskeyword;
+public class this1{
+int variable=5;
+public static void main(String[] args)
+{
+this1 obj=new this1();
+obj.method(20);
+obj.method();
+}
+void method(int variable){
+variable=10;
+System.out.println("value of variable"+variable);
+}
+void method(){
+int variable=40;
+System.out.println("value of variable"+variable);
+}}
+Output:value of variable10
+value of variable40
+
+//Example 2
+package this00;
+public class this11{
+this11()
+{
+this("this11");
+System.out.println("inside constructor without parameters");
+}
+this11(String str){
+System.out.println("Inside constructor with string parameters as"+str);
+}
+public static void main(String args[]){
+this obj=new this11();}}
+
+output:instructor constructor without parameters
+}
+//Example 3
+package this00;
+public class thismethod{
+public static void main(String args[])
+{
+thismethod obj=new thismethod();
+obj.methodTwo();
+}
+void methodOne(){
+System.out.println("Inside methodOne");
+}
+void methodTwo(){
+System.out.println("Inside Method two");
+this.methodOne();
+}}
+Output:Inside Method two
+       Inside methodOne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
