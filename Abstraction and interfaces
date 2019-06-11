@@ -1,0 +1,38 @@
+//abstract class and interface both cannot be initiated.
+//an abstact class can extend one class at a time
+//an abstract class can have both abstract and concrete methods
+//an interface can extend any number of interfaces at a time
+//an interface can have only public abstract methods
+package AbsVSinf;
+public interface Interface 
+{
+void a();
+void b();
+void c();
+void d();
+}
+package AbsVSinf;
+abstract class abstract1 implements Interface{
+public void c(){
+System.out.println("I am c");
+}} 
+package AbsVSinf;
+public class subclass extends abstract1{
+public void a(){
+System.out.print("I am a");}
+public void b(){
+System.out.println("I am b");}
+public void c(){
+System.out.println("I am c");}
+public void d(){
+System.out.println("I am d");}
+package AbsVSinf;
+public class object1{
+public static void main(String args[]){
+Interface a=new subclass();
+a.a();
+a.b();
+a.c();
+a.d();
+}}
+
