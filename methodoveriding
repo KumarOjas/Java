@@ -1,0 +1,52 @@
+/*Overriding in Java. In any object-oriented programming language, 
+Overriding is a feature that allows a subclass or child class to provide a specific 
+implementation of a method that is already provided by one of its super-classes or parent classes.*/
+package methodoverriding;
+public class Human{
+public void eat(){
+System.out.println("Human is eating");
+}}
+package methodoverriding;
+public class boy extends Human{
+public void eat(){ 
+System.out.println("Boy is eating");
+}
+public static void main(String args[]){
+boy obj=new boy();
+obj.eat();
+}}
+package methodoverriding;
+public class Human{
+public void eat(){
+System.out.println("Human is eating");
+}}
+//Example 2
+package methodoverriding1;
+public class method {
+void display(){
+System.out.println("class:Method");
+}
+}
+package methodoverriding1;
+public class subclass extends method{
+void display(){
+super.display();
+System.out.println("class:sub class");
+}}
+package methodoverriding1;
+public class main{
+public static void main(String args[]){
+subclass obj=new subclass();
+obj.display();
+}}
+
+
+
+
+
+
+
+
+
+
+
