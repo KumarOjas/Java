@@ -1,0 +1,13 @@
+package mypackage;
+public class A{
+public void show(){
+System.out.println("Sure method");
+}}
+package mypackage;
+import mypackage.A;
+public class hello{
+public static void main(Sring args[]){
+A a=new A();
+a.show();
+System.out.println("Show() class A");
+}}
