@@ -1,0 +1,150 @@
+/*
+Multithreading in Java
+Multithreading
+Multitasking
+Process-based multitasking
+Thread-based multitasking
+What is Thread
+Multithreading in java is a process of executing multiple threads simultaneously.
+
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
+However, we use multithreading than multiprocessing because threads use a shared memory area. They don't allocate separate memory area so saves memory, and context-switching between the threads takes less time than process.
+
+Java Multithreading is mostly used in games, animation, etc.
+
+Advantages of Java Multithreading
+1) It doesn't block the user because threads are independent and you can perform multiple operations at the same time.
+
+2) You can perform many operations together, so it saves time.
+
+3) Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.*/
+/*Functions used
+ getName()-Obtaining the thread name.
+ 
+ 
+ getPriority()-Obtaining thread priority
+ The getPriority() method of thread class is used to check the priority of the thread. When we create a thread, 
+ it has some priority assigned to it. Priority of thread can either be assigned by the JVM or by the programmer 
+ explicitly while creating the thread.
+
+The thread's priority is in the range of 1 to 10. The default priority of a thread is 5.
+ isAlive()-To check if the thread is still running
+ join()-For waiting for a thread to terminate.public final void join(): This java thread join method puts
+ the current thread on wait until the thread on which it’s called is dead. If the thread is interrupted, it throws 
+ InterruptedException.
+
+public final synchronized void join(long millis): This java thread join method is used to wait for the thread on 
+which it’s called to be dead or wait for specified milliseconds. Since thread execution depends on OS implementation,
+it doesn’t guarantee that the current thread will wait only for given time.
+
+public final synchronized void join(long millis, int nanos): This java thread join method is used to wait for thread to die
+for given milliseconds plus nanoseconds.
+
+difference between start and run method: Main difference is that when program calls start() method a new Thread is created and code 
+inside run() method is executed in new Thread while if you call run() method directly no new Thread is created and code inside run()
+will execute on current Thread.
+
+
+
+ run()- Entry of the thread
+ sleep()-suspend the thread  to find the priority.Thread.sleep() method can be used to pause the execution of 
+ current thread for specified time in milliseconds. The argument value for milliseconds can’t be negative,
+ else it throws IllegalArgumentException.
+
+
+ start()-Call the running method*/
+ package multithreading;
+ public class Multithreading extends Thread {
+ public void run(){
+ System.out.println("My thread is running State");
+ }
+ public static void main(String args[])
+ {
+ Multithreading obj=new Multithreading();
+ obj.start();
+ }}
+ package multithreading2;
+ public class Count extends Thread {
+ Count(){
+ super("my extending thread");
+ System.out.println("My thread Created"+this);
+ start();
+ }
+ public void run()
+ {
+ try
+ {
+ for(int i=0;i<10;i++)
+ {
+ System.out.println("Printing the count"+i);
+ Thread.sleep(1000);
+ }}
+ catch(InterruptedException e)
+ {
+ System.out.println("my thread interrupted");
+ }
+ System.out.println("my thread run is over");
+ }}
+ package multithreading2;
+ public class ExtendingExample{
+ public static void main(String args[]){
+ Count cnt=new Count();
+ try
+ {
+ while(cnt.isAlive()){
+ System.out.println('Main thread will be alive till the child thread is alive');
+ Thread.sleep(1500);
+ }}
+ catch(InterruptedException e){
+ System.out.println("Main thread interrupted");}
+ System.out.println("main thread is run over");
+ }}
+ 
+ Output:My thread CreatedThread[my extending thread,5,main]
+ Main thread will be alive till the child thread is alive
+ Printing the count0
+ Printing the count1
+  Main thread will be alive till the child thread is alive
+ Printing the count2
+  Main thread will be alive till the child thread is alive
+  Printing the count3
+ Printing the count4
+  Main thread will be alive till the child thread is alive
+ Printing the count5
+  Main thread will be alive till the child thread is alive
+  Printing the count6
+  Printing the count7
+   Main thread will be alive till the child thread is alive
+  Printing the count8
+     Main thread will be alive till the child thread is alive
+       Printing the count9
+       my thread  is run over
+     
+     package Thread;
+     public class Multithreading implements Runnable{
+     public void run(){
+     System.out.println("My thread is in running state");}
+     public static void main(String args[]){
+     Multithreading obj=new Multithreading();
+     Thread obj1=new Thread(obj);
+     obj1.start();
+     }}
+     Output:My thread is in running state.
+     
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
