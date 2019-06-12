@@ -1,0 +1,79 @@
+
+
+
+/*
+Modifiers                     Within the same class    Within other class    Within derived class    Within external Class 
+
+                                                       of Same package        of other package        of other package
+A.S.-Access specifier
+
+
+
+Private(Class level A.S)      yes                          no                   no                        no
+Default(Package level A.S)    yes                         yes                  no                        no
+Protected(Derived level A.S)  yes                         yes                  yes                        no
+Public (Universal A.S)         yes                       yes                  yes                         yes
+*/
+//Example 1
+package accessmodifier;
+public class private1 {
+public int a=20;
+public void show(){
+System.out.println("Hello Public  modifier");
+}}
+package accessmodifier;
+public class private2{
+public static void main(String args[]){
+private1 obj=new private1();
+System.out.println(obj.a);
+obj.show();
+}}
+//Example 2
+package accessmodifier;
+public class pack1{
+protected void show(){
+System.out.println("Hello I am protected");
+}}
+package accessmodifier;
+import accessmodifier.pack1;
+public class pack2 extends pack1{
+public static void main(String args[]){
+pack2 obj=new pack2();
+obj.show();
+}}
+//Example 3
+package  defaultaccess;
+public class A{
+void show(){
+System.out.println("hello Default");
+}}
+package defaultaccess;
+import defaultaccess.A;
+public class B{
+public static void main(String args[])
+{
+A obj=new A();
+obj.show();
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
