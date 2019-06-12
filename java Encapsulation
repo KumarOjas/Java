@@ -50,6 +50,31 @@ public int setEmpage( int newValue)
 {
 empAge=newValue;
 }
+public void setEmpname(String newValue){
+empName=newValue;
+}
+public void setEmpSSN(int newValue){
+ssn=newValue;
+}}
+package encapsulation;
+public class EncapTest{
+public static void main(String args[]){
+Encapsulation obj=new Encapsulation();
+obj.setEmpname("Fayaz");
+obj.setEmpage(25);
+obj.setEmpSSN(12223);
+System.out.println("Employee Name"+obj.getEmpName());
+System.out.println("Employee SSN"+obj.setEmpSSN());
+System.out.println("Employee Name"+obj.getEmpAge());
+}}
+
+
+
+
+
+
+
+
 
 
  
